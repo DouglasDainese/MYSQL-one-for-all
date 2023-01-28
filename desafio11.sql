@@ -1,6 +1,6 @@
 SELECT 
 	S.songs_title AS "nome_musica",
-    CASE 
+        CASE 
 		    WHEN S.songs_title LIKE '%Bard%' THEN REPLACE(S.songs_title, 'Bard', 'QA')
         WHEN S.songs_title LIKE '%Amar%' THEN REPLACE(S.songs_title, 'Amar', 'Code Review')
         WHEN S.songs_title LIKE '%Pais%' THEN REPLACE(S.songs_title, 'Pais', 'Pull Requests')
